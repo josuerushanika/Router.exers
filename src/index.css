@@ -41,7 +41,10 @@ header nav h1 {
 }
 
 /* page content */
-
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
 
 /* help layout */
 

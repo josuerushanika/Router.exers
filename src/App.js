@@ -16,7 +16,7 @@ import RootLayout from "./layout/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={RootLayout}>
+    <Route path="/" element={<RootLayout />}>
         
     <Route index element={<Home/>}/>
     <Route path="/about" element={<About/>}/>
@@ -26,14 +26,6 @@ const router = createBrowserRouter(
 );
 function App() {
   return (
-   
-    // <header>
-    //   <nav>
-    //     <h1>JobaRouter</h1>
-    //     <NavLink to="/">Home</NavLink>
-    //     <NavLink to="About">About</NavLink>
-    //   </nav>
-    // </header>
    
     <RouterProvider router={router}/>
   
