@@ -5,7 +5,8 @@ import {
   Route,
   Link,
   NavLink, 
-  createRoutesFromElements
+  createRoutesFromElements,
+  RouterProvider
 } from "react-router-dom";
 
 //Pages
@@ -32,13 +33,8 @@ function App() {
     //     <NavLink to="About">About</NavLink>
     //   </nav>
     // </header>
-     <main>
-      <Routes>
-        
-        <Route index element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-      </Routes>
-     </main>
+   
+    <RouterProvider router={router}/>
   
   );
 }
