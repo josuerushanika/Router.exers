@@ -15,11 +15,11 @@ import About from "./Pages/About";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Routes>
+    <Route>
         
     <Route index element={<Home/>}/>
     <Route path="/about" element={<About/>}/>
-  </Routes>
+  </Route>
 
   )
 );
