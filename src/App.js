@@ -1,10 +1,7 @@
  // eslint-disable-next-line
 import { 
   createBrowserRouter,
-  Routes,
-  Route,
-  Link,
-  NavLink, 
+  Route, 
   createRoutesFromElements,
   RouterProvider
 } from "react-router-dom";
@@ -13,9 +10,13 @@ import {
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 
+//layout
+
+import RootLayout from "./layout/RootLayout";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <Route path="/" element={RootLayout}>
         
     <Route index element={<Home/>}/>
     <Route path="/about" element={<About/>}/>
