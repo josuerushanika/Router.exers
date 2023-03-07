@@ -7,7 +7,7 @@ import About from "./Pages/About";
 
 function App() {
   return (
-    <BrowserRouter>
+   
     <header>
       <nav>
         <h1>JobaRouter</h1>
@@ -22,7 +22,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
       </Routes>
      </main>
-    </BrowserRouter>
+  
   );
 }
 
